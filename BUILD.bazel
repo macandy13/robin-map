@@ -1,6 +1,6 @@
 cc_library(
     name = "robin-map",
-    hdrs = glob(["tsl/*.h"]),
-    includes = ["include"],
+    hdrs = glob(["include/tsl/*.h"]),
+    strip_include_prefix = "include/",
     visibility = ["//visibility:public"],
 )
